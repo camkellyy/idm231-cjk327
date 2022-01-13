@@ -1,0 +1,110 @@
+/* GENERAL */
+* {
+    box-sizing: border-box;
+    padding: 0rem;
+    margin: 0rem;
+}
+body {
+    font-family: 'Inter var', sans-serif;
+}
+h1 {
+    font-size: 6.5rem;
+    font-weight: 500;
+    margin: 5rem 0 0 17rem;
+}
+h3 {
+    font-size: 2.25rem;
+    font-weight: 300;
+    margin: .75rem 0 0 17rem;
+}
+.birthday h3 {
+    font-weight: 500;
+    float: left;
+    margin-top: 12rem;
+}
+
+
+
+/* CAROUSEL */
+.carousel {
+    margin-left: 55rem;
+    width: 25%;
+    overflow: hidden;
+}
+.carousel-slide {
+    display: flex;
+    width: 100%;
+}
+.carousel i {
+    position: absolute;
+    top: 57%;
+    z-index: 10;
+    font-size: 5rem;
+    color: black;
+    cursor: pointer;
+}
+#prev-button {
+    left: 55%;
+}
+#next-button {
+    right: 7%;
+}
+
+
+
+/* SIDE RECTANGLES */
+.rect {
+    height: 67px;
+    left: 0;
+    position: absolute;
+    width: 100px;
+    z-index: 10;
+}
+.true-red {
+    background-color: #BF1932;
+    top: 0rem;
+}
+.honeysuckle {
+    background-color: #D94F70;
+    top: 4.2rem;
+}
+.sand-dollar {
+    background-color: #DECDBE;
+    top: 8.4rem;
+}
+.mimosa {
+    background-color: #F0C05A;
+    top: 12.5rem;
+}
+.serenity {
+    background-color: #92A8D1;
+    top: 16.7rem;
+}
+.tigerlily {
+    background-color: #E2583E;
+    top: 20.9rem;
+}
+.marsala {
+    background-color: #955251;
+    top: 25rem;
+}
+.radient-orchid {
+    background-color: #B163A3;
+    top: 29.2rem;
+}
+.greenery {
+    background-color: #88B04B;
+    top: 33.2rem;
+}
+.tangerine-tango {
+    background-color: #DD4124;
+    top: 37.2rem;
+}
+.ultra-violet {
+    background-color: #5F4B8B;
+    top: 41.2rem;
+}
+.chili-pepper {
+    background-color: #9B1B30;
+    top: 45.3rem;
+}
