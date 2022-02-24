@@ -17,18 +17,54 @@ h3 {
     font-weight: 300;
     margin: .75rem 0 0 17rem;
 }
+main {
+    display: flex;
+}
+
+
+/* BIRTHDAY INPUT */
+input {
+    border: .5px solid black;
+    border-radius: 0;
+    font-size: 1.2rem;
+    height: 1.98rem;
+    margin-top: 1.5rem;
+    padding: .5rem;
+    width: 12rem;
+}
+.bday-input button {
+    background-color: black;
+    border: none;
+    border-top-right-radius: .5rem;
+    color: white;
+    font-size: 1rem;
+    height: 3.075rem;
+    margin-top: 1.5rem;
+    width: 4rem;
+}
+.bday-input button:hover {
+    background-color: #3E3E3E;
+}
+.bday-input {
+    display: flex;
+    margin-left: 17rem;
+}
 .birthday h3 {
     font-weight: 500;
     float: left;
-    margin-top: 12rem;
+}
+.birthday {
+    display: flex;
+    flex-direction: column;
+    margin-top: 9rem;
 }
 
 
 
 /* CAROUSEL */
 .carousel {
-    margin-left: 55rem;
-    width: 25%;
+    margin-left: 18rem;
+    width: 30%;
     overflow: hidden;
 }
 .carousel-slide {
@@ -50,6 +86,64 @@ h3 {
     right: 7%;
 }
 
+.carousel-btn {
+    margin: 0 10px;
+    min-height: 500px;
+    min-width: 400px;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+/* CAROUSEL IMAGES / BUTTONS */
+.Ari {
+    background-image: url('../carousel/5.png');
+}
+
+.Lib {
+    background-image: url('../carousel/6.png');
+}
+
+.Cap {
+    background-image: url('../carousel/7.png');
+}
+
+.Gem {
+    background-image: url('../carousel/8.png');
+}
+
+.Aqu {
+    background-image: url('../carousel/9.png');
+}
+
+.Sag {
+    background-image: url('../carousel/10.png');
+}
+
+.Vir {
+    background-image: url('../carousel/11.png');
+}
+
+.Can {
+    background-image: url('../carousel/12.png');
+}
+
+.Tau {
+    background-image: url('../carousel/1.png');
+}
+
+.Leo {
+    background-image: url('../carousel/2.png');
+}
+
+.Pis {
+    background-image: url('../carousel/3.png');
+}
+
+.Sco {
+    background-image: url('../carousel/4.png');
+}
 
 
 /* SIDE RECTANGLES */
@@ -82,7 +176,7 @@ h3 {
 }
 .tigerlily {
     background-color: #E2583E;
-    top: 20.9rem;
+    top: 20.8rem;
 }
 .marsala {
     background-color: #955251;
