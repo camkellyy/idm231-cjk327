@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="modal.css">
     <title>Pantone Zodiac</title>
 </head>
 <body>
-<div class="rect true-red"></div>
 
     <!--SIDE RECTANGLES-->
+    <div class="rect true-red"></div>
     <div class="rect honeysuckle"></div>
     <div class="rect sand-dollar"></div>
     <div class="rect mimosa"></div>
@@ -24,23 +26,25 @@
     <div class="rect ultra-violet"></div>
     <div class="rect chili-pepper"></div>
 
-
     <!--HEADER-->
     <header>
+        <button class="help">?</button>
         <h1>Pantone Zodiac.</h1>
         <h3>Which color of the year are you?</h3>
     </header>
 
-
     <!--MAIN-->
     <main>
 
-        <!--BIRTHDAY ENTERY-->
+        <!--BIRTHDAY ENTRY-->
         <div class="birthday">
             <h3>Enter your birthday.</h3>
+            <div class="bday-input">
+                <p><input class="bday" type="date"></p>
+                <p><button class="submit">Enter</button></p>
+            </div>
         </div>
     
-
         <!--CAROUSEL-->
         <div class="carousel">
 
@@ -48,25 +52,56 @@
             <i id="prev-button" class="fa fa-angle-left"></i>
             <i id="next-button" class="fa fa-angle-right"></i>
     
-
             <!--SLIDER-->
             <div class="carousel-slide">
-                <img src="../carousel/12.png" id="last" alt="Chili Pepper">
-                <img src="../carousel/1.png" alt="True Red">
-                <img src="../carousel/2.png" alt="Honeysuckle">
-                <img src="../carousel/3.png" alt="Sand Dollar">
-                <img src="../carousel/4.png" alt="Mimosa">
-                <img src="../carousel/5.png" alt="Serenity">
-                <img src="../carousel/6.png" alt="Tigerlily">
-                <img src="../carousel/7.png" alt="Marsala">
-                <img src="../carousel/8.png" alt="Radient Orchid">
-                <img src="../carousel/9.png" alt="Greenery">
-                <img src="../carousel/10.png" alt="Tangerine Tango">
-                <img src="../carousel/11.png" alt="Ultra Violet">
-                <img src="../carousel/12.png" alt="Chili Pepper">
-                <img src="../carousel/1.png" id="first" alt="True Red">
+                <button class="carousel-btn Sco" id="last"></button>
+                <button class="carousel-btn Tau"></button>
+                <button class="carousel-btn Lib"></button>
+                <button class="carousel-btn Cap"></button>
+                <button class="carousel-btn Gem"></button>
+                <button class="carousel-btn Aqu"></button>
+                <button class="carousel-btn Sag"></button>
+                <button class="carousel-btn Vir"></button>
+                <button class="carousel-btn Can"></button>
+                <button class="carousel-btn Ari"></button>
+                <button class="carousel-btn Leo"></button>
+                <button class="carousel-btn Pis"></button>
+                <button class="carousel-btn Sco"></button>
+                <button class="carousel-btn Tau" id="first"></button>
             </div>
         </div>
+
+        <!--MODAL-->
+        <div id="modal" class="modal blanket">
+            <div class="modal-body">
+                <div class="modal-content">
+                    <img class="image">
+                    <div class="modal-text">
+                        <h2 class="date">How to Find Your Pantone Zodiac!</h2>
+                        <hr>
+                        <p class="description-1"> Pantone is a color matching system widely used by artists and designers of all kinds. Pantone chooses a color annually to be named <span class="red">Pantone Color of the Year</span>! Want to know what color you are <span class="purple">based on your birthday</span>? Well then you're in the right place!</p>
+                        <p class="description-2">By typing in or selecting <span class="green">your birthdate</span> and clicking the submit button, your personal <span class="blue">Pantone Zodiac</span> will appear! You can also explore what each <span class="yellow">Pantone Color of the Year</span> is in relation to the Zodiac Signs by clicking the arrow buttons on either side of the color! Happy color matching!</p>
+                    </div>
+                    <button id="btn-modal-close" class="toggle-modal"><i class="material-icons">close</i></button>
+                </div>
+            </div>
+        </div>
+
+        <!--HELP MODAL-->
+        <div id="modal-help" class="modal-help blanket" hidden>
+            <div class="modal-body-help">
+                <div class="modal-content-help">
+                    <div class="modal-text-help">
+                        <h2 class="date-help">How to Find Your Pantone Zodiac!</h2>
+                        <hr>
+                        <p class="description-1-help"> Pantone is a color matching system widely used by artists and designers of all kinds. Pantone chooses a color annually to be named <span class="red">Pantone Color of the Year</span>! Want to know what color you are <span class="purple">based on your birthday</span>? Well then you're in the right place!</p>
+                        <p class="description-2-help">By typing in or selecting <span class="green">your birthdate</span> and clicking the submit button, your personal <span class="blue">Pantone Zodiac</span> will appear! You can also explore what each <span class="yellow">Pantone Color of the Year</span> is in relation to the Zodiac Signs by clicking the arrow buttons on either side of the color! Happy color matching!</p>
+                    </div>
+                    <button id="btn-modal-close-help" class="toggle-modal-help"><i class="material-icons">close</i></button>
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <script src="app.js"></script>
