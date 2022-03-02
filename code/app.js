@@ -53,7 +53,7 @@ const radientOrchid = document.querySelector('.Can');
 const greenery = document.querySelector('.Tau');
 const tangerineTango = document.querySelector('.Leo');
 const ultraViolet = document.querySelector('.Pis');
-const chiliPepper = document.querySelector('.Sco');
+const chiliPepper = document.getElementById('Sco');
 const helpButton = document.querySelector('.help');
 
 
@@ -83,6 +83,7 @@ radientOrchid.addEventListener('click', function() {
     userPicked('Can');
 });
 greenery.addEventListener('click', function() {
+    console.log('taurus button');
     userPicked('Tau');
 });
 tangerineTango.addEventListener('click', function() {
@@ -110,6 +111,8 @@ function userPicked(colorName) {
 
     switch (colorName) {
         case 'Ari':
+            speakers.src = `../sounds/ari.mp3`;
+            speakers.play();
             image.src = '../modal/aries.png';
             bdate.innerHTML = "March 21st - April 19th.";
             description1.innerHTML = "You tend to fall in love very quickly, probably because you are full of passion. You are also a motivated and confident leader, but don’t let your stubborness get in the way!";
@@ -118,14 +121,18 @@ function userPicked(colorName) {
             modal.hidden = !modal.hidden;
         break;
         case 'Lib':
+            speakers.src = `../sounds/lib.wav`;
+            speakers.play();
             image.src = '../modal/libra.png';
             bdate.innerHTML = "Sept 23rd - Oct 23rd.";
-            description1.innerHTML = "You have many friends as you are quite extrovered and always friendly! Your charm and connectivity make people feel comfortable around you.";
+            description1.innerHTML = "You have many friends as you are quite extroverted and always friendly! Your charm and connectivity makes people feel comfortable around you.";
             description2.innerHTML = "As an air sign, you are concerned with the balance of the world and fight for justice."
             underline.style.borderColor = "#D94F70";
             modal.hidden = !modal.hidden;
         break;
         case 'Cap':
+            speakers.src = `../sounds/cap.flac`;
+            speakers.play();
             image.src = '../modal/capricorn.png';
             bdate.innerHTML = "Dec 22nd - Jan 19th.";
             description1.innerHTML = "You are one of the most hardworking signs. You are ambitious and goal-oriented, leading to you being very organized. You are likely to be succesful due to your focus and determination.";
@@ -134,6 +141,8 @@ function userPicked(colorName) {
             modal.hidden = !modal.hidden;
         break;
         case 'Gem':
+            speakers.src = `../sounds/gem.wav`;
+            speakers.play();
             image.src = '../modal/gemini.png';
             bdate.innerHTML = "May 21st - June 21st.";
             description1.innerHTML = "You are connected to your inner child through your playfullness and curiosity! Considered the social butterfly of the zodiacs, you are constantly juggling various hobbies, friend groups, and passions.";
@@ -142,14 +151,18 @@ function userPicked(colorName) {
             modal.hidden = !modal.hidden;
         break;
         case 'Aqu':
+            speakers.src = `../sounds/aqu.mp3`;
+            speakers.play();
             image.src = '../modal/aquarius.png';
             bdate.innerHTML = "Jan 20th - Feb 18st.";
             description1.innerHTML = "You are very forward-thinking and optimistic. You have a vision of your future, and with your cleverness and self-reliance, you will make your future into a reality!";
-            description2.innerHTML = "As an air sign, you want the world to be a better place. With your optimism, we can get there!";
+            description2.innerHTML = "As an air sign, you want to make the world to be a better place. With your optimism, we can get there!";
             underline.style.borderColor = "#92A8D1";
             modal.hidden = !modal.hidden;
         break;
         case 'Sag':
+            speakers.src = `../sounds/sag.wav`;
+            speakers.play();
             image.src = '../modal/saggitarius.png';
             bdate.innerHTML = "Nov 22th - Dec 21st.";
             description1.innerHTML = "You are an adventurer at heart. This is obvious through your adabtability to new environments. You are also quite curious, often searching for answers other’s wouldn’t!";
@@ -158,38 +171,48 @@ function userPicked(colorName) {
             modal.hidden = !modal.hidden;
         break;
         case 'Vir':
+            speakers.src = `../sounds/vir.wav`;
+            speakers.play();
             image.src = '../modal/virgo.png';
             bdate.innerHTML = "August 23th - Sept 22st.";
             description1.innerHTML = "You are a very quick thinker, which complements your communication skills. However, you often have too much mental energy, resulting in being stressed and tense.";
-            description2.innerHTML = "As an earth sign, you have deep roots nature and are very kind and smypathetic to others!";
+            description2.innerHTML = "As an earth sign, you have deep roots in nature and are very kind and smypathetic to others!";
             underline.style.borderColor = "#955251";
             modal.hidden = !modal.hidden;
         break;
         case 'Can':
+            speakers.src = `../sounds/can.wav`;
+            speakers.play();
             image.src = '../modal/cancer.png';
             bdate.innerHTML = "June 22th - July 22st.";
-            description1.innerHTML = "You are devoted to your family and friends, and will do anything to protect them, whoch shows how hyper-emotional you are. You also tend to fall in love quickly, again due to your sensitivity.";
+            description1.innerHTML = "You are devoted to your family and friends, and will do anything to protect them, which shows how hyper-emotional you are. You also tend to fall in love quickly, again due to your sensitivity.";
             description2.innerHTML = "As a water sign, you share many similarities with Scorpio’s and Picses’, but that does not mean you’re compatable!";
             underline.style.borderColor = "#B163A3";
             modal.hidden = !modal.hidden;
         break;
         case 'Tau':
+            speakers.src = `../sounds/tau.mp3`;
+            speakers.play();
             image.src = '../modal/taurus.png';
             bdate.innerHTML = "April 20th - May 20st.";
             description1.innerHTML = "You are very stubborn, resulting in being resistant to change. You are also hardworking and dedicated, so you can make the best out of any new situation! Many of your freidnships rely on you, as you are so dependable.";
-            description2.innerHTML = "As an earth sign, you are extreamely grounded and always stick to the truth!";
+            description2.innerHTML = "As an earth sign, you are extremely grounded and always stick to the truth!";
             underline.style.borderColor = "#88B04B";
             modal.hidden = !modal.hidden;
         break;
         case 'Leo':
+            speakers.src = `../sounds/leo.wav`;
+            speakers.play();
             image.src = '../modal/leo.png';
             bdate.innerHTML = "July 23th - August 22st.";
-            description1.innerHTML = "You draw attention to yourself through your energy and sense of self-assurence. You respect others and are generous with your time, leading to a natural drive for leadership!";
+            description1.innerHTML = "You draw attention to yourself through your energy and sense of self-assurance. You respect others and are generous with your time, leading to a natural drive for leadership!";
             description2.innerHTML = "As a fire sign, you share many similarities with Saggitarius’ and Aries’, especially your compassion!";
             underline.style.borderColor = "#DD4124";
             modal.hidden = !modal.hidden;
         break;
         case 'Pis':
+            speakers.src = `../sounds/pis.wav`;
+            speakers.play();
             image.src = '../modal/pisces.png';
             bdate.innerHTML = "Feb 19th - March 20st.";
             description1.innerHTML = "You are very aware of your inner child and have never lost your creativity and imagination! You put your all into your relationships to ensure the happiness of others.";
@@ -198,9 +221,11 @@ function userPicked(colorName) {
             modal.hidden = !modal.hidden;
         break;
         case 'Sco':
+            speakers.src = `../sounds/sco.mp3`;
+            speakers.play();
             image.src = '../modal/scorpio.png';
             bdate.innerHTML = "Oct 24th - Nov 21st.";
-            description1.innerHTML = "You are very passionate, and out your all into whatever captivates you. Because you are a profound-thinker, your passion runs free. But your secretive personality often keeps others from seeing the real you.";
+            description1.innerHTML = "You are very passionate, and put your all into whatever captivates you. Because you are a profound-thinker, your passion runs free. But your secretive personality often keeps others from seeing the real you.";
             description2.innerHTML = "As a water sign, you are able to dive deep into your emotions, but don’t get too lost!";
             underline.style.borderColor = "#9B1B30";
             modal.hidden = !modal.hidden;
